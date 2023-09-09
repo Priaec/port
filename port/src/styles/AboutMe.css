@@ -1,4 +1,13 @@
-.aboutMe-container{
+.aboutMe-wrapper{
   font-size: large;
   padding: 10px 5px;
+}
+
+.aboutMe-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutMe-title{
+  font-size: 1.5rem;
 }

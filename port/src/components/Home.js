@@ -7,7 +7,7 @@ import AboutMe from './AboutMe';
 class Home extends React.Component{
   render(){
     return (
-      <div className='container' style={{backgroundColor: Colors.darkBackground}}>
+      <div className='container'>
         <HeaderBar/>
         <AboutMe/>
       </div>

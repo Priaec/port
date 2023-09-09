@@ -5,12 +5,12 @@ import '../styles/HeaderBar.css'
 class HeaderBar extends React.Component{
   render(){
     return (
-      <div className='headerBar-container' style={{backgroundColor: Colors.darkBackground}}>
-        <p style={{color: Colors.title}}>Joshua Cohen</p>
-        <button className='headerBar-button' style={{backgroundColor: Colors.darkBackground}}>About Me</button>
-        <button className='headerBar-button' style={{backgroundColor: Colors.darkBackground}}>Projects</button>
-        <button className='headerBar-button' style={{backgroundColor: Colors.darkBackground}}>Interests</button>
-        <button id='contact-button' className='headerBar-button' style={{backgroundColor: Colors.button}}>Contact</button>
+      <div className='headerBar-container'>
+        <p className='headerBar-button-left-element' style={{color: Colors.darkBackground}}>Joshua Cohen</p>
+        <p className='headerBar-button' style={{color: Colors.darkBackground}}>About Me</p>
+        <p className='headerBar-button' style={{color: Colors.darkBackground}}>Projects</p>
+        <p className='headerBar-button' style={{color: Colors.darkBackground}}>Interests</p>
+        <p id='contact-button' className='headerBar-button'>Contact</p>
       </div>
     );
   }

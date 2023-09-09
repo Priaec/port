@@ -1,8 +1,11 @@
 .container{
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  /*background: linear-gradient(to bottom, #18191A, #9146FF);*/
+  background: linear-gradient(to bottom, #9146FF, #FFA500);
+  /*background-color: #9146FF;*/
+  width: 100%;
+  height: 100%;
 }
 
 .container > *{

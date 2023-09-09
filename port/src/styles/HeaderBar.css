@@ -9,26 +9,42 @@
 
 .headerBar-button{
   border: 0;
+  background-color: none;
   border-radius: 0.5rem;
   font-size: 0.6em;
-  color: #6a6a6a;
+  color: black;
   height: fit-content;
   padding: 10px;
   transition: color 0.3s ease;
 }
 
+/*user hovers over one of the links*/
+.headerBar-button:hover{
+  color: aliceblue;
+}
+
+.headerBar-button-left-element{
+  float: left;
+  margin-right: auto;
+}
+
 #contact-button{
-  background-color: #9146FF;
   color: black;
   transition: background-color 0.3s ease;
 }
 
 #contact-button:hover{
   cursor: pointer;
-  background-color: azure;
+  background-color: aliceblue;
 }
 
-.headerBar-button:hover{
-  color: aliceblue;
-  background-color: green;
+#contact-button-container{
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 860px) {
+  .headerBar-container{
+    flex-direction: column;
+  }
 }
