@@ -8,6 +8,28 @@
   height: 100%;
 }
 
-.container > *{
-  font-size: 2.5em;
+
+
+.separator {
+  width: 100px; /* Adjust the initial width of the blob */
+  height: 100px; /* Adjust the initial height of the blob */
+  background-color: #333; /* Background color of the blob (dark color) */
+  position: relative;
+  border-radius: 50%;
+  animation: wobbleAnimation 5s ease-in-out infinite; /* Apply wobble animation */
 }
+
+@keyframes wobbleAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25%, 75% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+
+

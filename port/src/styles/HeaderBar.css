@@ -11,7 +11,7 @@
   border: 0;
   background-color: none;
   border-radius: 0.5rem;
-  font-size: 0.6em;
+  font-size: 1.6rem;
   color: black;
   height: fit-content;
   padding: 10px;
@@ -26,6 +26,7 @@
 .headerBar-button-left-element{
   float: left;
   margin-right: auto;
+  font-size: 4rem;
 }
 
 #contact-button{
