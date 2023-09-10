@@ -1,22 +1,22 @@
+body{
+  background: linear-gradient(to bottom, #9146FF, #FFA500);
+}
+
 .container{
   display: flex;
   flex-direction: column;
-  /*background: linear-gradient(to bottom, #18191A, #9146FF);*/
   background: linear-gradient(to bottom, #9146FF, #FFA500);
-  /*background-color: #9146FF;*/
   width: 100%;
   height: 100%;
 }
 
-
-
 .separator {
-  width: 100px; /* Adjust the initial width of the blob */
-  height: 100px; /* Adjust the initial height of the blob */
-  background-color: #333; /* Background color of the blob (dark color) */
+  width: 100px;
+  height: 100px;
+  background-color: #333;
   position: relative;
   border-radius: 50%;
-  animation: wobbleAnimation 5s ease-in-out infinite; /* Apply wobble animation */
+  animation: wobbleAnimation 5s ease-in-out infinite;
 }
 
 @keyframes wobbleAnimation {

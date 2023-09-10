@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   align-items: baseline;
   padding: 1vw;
-}
+  }
 
 .headerBar-button{
   border: 0;
@@ -20,7 +20,8 @@
 
 /*user hovers over one of the links*/
 .headerBar-button:hover{
-  color: aliceblue;
+  cursor: pointer;
+  color: white;
 }
 
 .headerBar-button-left-element{

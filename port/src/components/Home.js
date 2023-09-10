@@ -3,7 +3,8 @@ import HeaderBar from './HeaderBar';
 import AboutMe from './AboutMe';
 import Footer from './Footer';
 import TechStack from './TechStack';
-import '../styles/Home.css'
+import Project from './Project'
+import '../styles/Home.css';
 
 class Home extends React.Component{
   render(){
@@ -12,6 +13,7 @@ class Home extends React.Component{
         <HeaderBar/>
         <AboutMe/>
         <TechStack/>
+        <Project/>
         <Footer/>
       </div>
     );
