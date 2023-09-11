@@ -1,0 +1,12 @@
+.projects-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .projects-wrapper{
+    flex-direction: column;
+  }
+}
