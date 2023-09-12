@@ -1,16 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes
 import Home from './components/Home';
+import LandingPage from './components/LandingPage';
 
-function App() {
+class App extends React.Component{
+  render(){
   return (
     <Router>
-      <Routes> {/* Use <Routes> as the top-level container */}
-        <Route path="/" element={<Home/>} />
-        {/* Add other routes here */}
+      <Routes>
+        <Route path="/" element={<Home/>}/>
       </Routes>
     </Router>
   );
+  }
 }
 
 export default App;

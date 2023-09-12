@@ -36,7 +36,7 @@
   font-size: 3rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .project-wrapper{
     width: fit-content;
   }
