@@ -1,5 +1,4 @@
 import React from 'react';
-import Colors from '../assets/Colors.json'
 import '../styles/Interests.css'
 
 class Interests extends React.Component{

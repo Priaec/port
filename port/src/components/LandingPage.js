@@ -1,5 +1,6 @@
 import React from 'react';
-import AnimatedBanner from './AnimatedBanner';
+import logo from '../assets/Logo.png';
+import '../styles/LandingPage.css'
 
 class LandingPage extends React.Component{
   constructor(props){
@@ -11,7 +12,7 @@ class LandingPage extends React.Component{
     console.log(this.props)
     setTimeout(()=>{
       this.toWeb()
-    }, 3000)
+    }, 1400)
   }
 
   toWeb = () =>{
@@ -22,9 +23,9 @@ class LandingPage extends React.Component{
 
   render(){
     return (
-      <>
-        <AnimatedBanner/>
-      </>
+      <div className='landingPage-wrapper'>
+        <img src={logo} alt='' className='landingPage-logo'/>
+      </div>
     );
   }
 }

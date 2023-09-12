@@ -1,5 +1,4 @@
 import React from 'react';
-import Colors from '../assets/Colors.json'
 import '../styles/HeaderBar.css'
 
 class HeaderBar extends React.Component{

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Real Time Messenger",
+    "startDate": "06-10-2023",
+    "endDate": "",
+    "description": "In development of an independent web application that facilitates instantaneous inter-user communication through mobile devices. The platform encompasses contact synchronization to enable frictionless message transmission, all presented within an intuitively accessible interface, ensuring a refined and immersive user experience",
+    "concepts": "ReactJS, React Native, Node.js, Express, MongoDB, client-server architecture, Javascript Programming Language, JSON, AWS, EC2, IAM"
+  },
+  {
+    "name": "BeFit Senior Design - Native Fitness Application",
+    "startDate": "08-15-2022",
+    "endDate": "06-07-2023",
+    "description": "Created a native application for Android and Apple (iOS) with a team of 5. Users can track daily fitness metrics leveraging native device Health APIs. Users can create individual accounts using credentials. Ability to display individualized health metrics in the dashboard.",
+    "concepts": "JavaScript programming language, React Native, Node.js, Express.js, JSON, client-server, architecture, MongoDB and Compass Database Management System, Machine Learning"
+  },
+  {
+    "name": "",
+    "startDate": "",
+    "endDate": "",
+    "description": "",
+    "concepts": ""
+  },
+  {
+    "name": "",
+    "startDate": "",
+    "endDate": "",
+    "description": "",
+    "concepts": ""
+  }
+]
