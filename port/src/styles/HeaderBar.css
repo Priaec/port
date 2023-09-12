@@ -9,10 +9,8 @@
 
 .headerBar-button{
   border: 0;
-  background-color: none;
   border-radius: 0.5rem;
   font-size: 1.6rem;
-  color: black;
   height: fit-content;
   padding: 10px;
   transition: color 0.3s ease;
@@ -21,7 +19,7 @@
 /*user hovers over one of the links*/
 .headerBar-button:hover{
   cursor: pointer;
-  color: white;
+  color: #7F00FF
 }
 
 .headerBar-button-left-element{
@@ -31,13 +29,15 @@
 }
 
 #contact-button{
-  color: black;
-  transition: background-color 0.3s ease;
+  /*color: black;*/
+  transition: background-color 0.3s ease-in-out;
 }
 
 #contact-button:hover{
   cursor: pointer;
-  background-color: aliceblue;
+  background: linear-gradient(to right,#FF10F0 ,#7f00ff);
+  background-color: #7F00FF;
+  color: black
 }
 
 #contact-button-container{
