@@ -5,7 +5,8 @@ class Project extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      isVisible: false
+      isVisible: false,
+      isBouncing: false
     }
   }
 
@@ -20,30 +21,37 @@ class Project extends React.Component{
       this.setState({ isVisible: false });
   }
 
+  handleMouseEnter = () =>{
+    this.setState({ isBouncing: true });
+  }
+
+  handleMouseLeave = () =>{
+    this.setState({ isBouncing: false });
+  }
+
+  conceptList = ({concepts}) =>{
+    const renderedConcepts = []
+    concepts.forEach((concept)=>{
+      renderedConcepts.push(<li>{concept}</li>)
+    })
+    return(<ul className='project-concepts'>{renderedConcepts}</ul>)
+  }
+
   render(){
-    const {isVisible} = this.state;
+    const { isVisible, isBouncing } = this.state;
+    const { project } = this.props;
     return (
-      <div className='project-wrapper'>
+      <div className={`project-wrapper ${isBouncing ? 'bounce': ''}`}
+        onMouseEnter={this.handleMouseEnter}
+        onMouseLeave={this.handleMouseLeave}>
         <div className={`scroll-text ${isVisible ? 'visible' : ''}`}>
-          <p className='project-title'>Project</p>
+          <p className='project-title'>{project.name}</p>
           <div className='project-container'>
-            <p>Making a difference with REST APIs, Deep Learning Models,
-              and interactive User Interfaces. I have graduated from
-              California State University Northridge, with a Bachelors
-              in Computer Science. I currently am aspiring to be a major
-              contributor in the tech Industry. I am ambitious to leverage
-              the newest technologies that are relevant.
-            </p>
-            <p>
-              Making a difference with REST APIs, Deep Learning Models,
-              and interactive User Interfaces. I have graduated from
-              California State University Northridge, with a Bachelors
-              in Computer Science. I currently am aspiring to be a major
-              contributor in the tech Industry. I am ambitious to leverage
-              the newest technologies that are relevant.
-            </p>
+            <p className='project-description'>{project.description}</p>
+            <this.conceptList concepts={project.concepts}/>
           </div>
         </div>
+              <p className='projectGallery-button'>Gallery</p>
       </div>
     );
   }
