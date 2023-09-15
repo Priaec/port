@@ -14,17 +14,17 @@
   {
     "language": "Java",
     "img": "./JavaLogo.png",
-    "applications": ["Mobile Applications", "DataStructures and Algorithms"],
+    "applications": ["Mobile Applications", "DataStructures", "Algorithms"],
     "frameworks": ["Android Studio"]
   },
   {
-    "language": "noSQL Non-relational Database Languages",
+    "language": "noSQL",
     "img": "./noSQLLogo.png",
     "applications": ["Web Applications", "Mobile Applications"],
-    "frameworks": ["MonoDB", "MongoDB Compass Database Management System"]
+    "frameworks": ["MonoDB", "MongoDB Compass"]
   },
   {
-    "language": "SQL Relational Database Languages",
+    "language": "SQL",
     "img": "https://www.svgrepo.com/show/369980/database-sql.svg",
     "applications": ["Web Applications", "Mobile Applications"],
     "frameworks": ["mySQL", "phpMyAdmin","Android Studio"]

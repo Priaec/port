@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/TechStack.css';
 import TechList from '../assets/TechStack.json';
 import Stack from './Stack';
+import TechStackList from './TechStackList';
 
 class TechStack extends React.Component{
   constructor(props){
@@ -25,7 +26,7 @@ class TechStack extends React.Component{
   techStackList = () =>{
     const techStacks = [];
     TechList.forEach((stack)=>{
-      techStacks.push(<li><Stack stack={stack}/></li>)
+      techStacks.push(<li className='techStack-item'><Stack stack={stack}/></li>)
     })
     return(<ul className='techStack-list'>{techStacks}</ul>)
   }
@@ -39,7 +40,7 @@ class TechStack extends React.Component{
         <div className={`scroll-text ${isVisible ? 'visible' : ''}`}>
           <p className='techstack-title'>TechStack</p>
           <div className='techstack-container'>
-            <this.techStackList/>
+            <TechStackList/>
           </div>
         </div>
       </div>
