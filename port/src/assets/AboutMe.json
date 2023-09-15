@@ -1,0 +1,7 @@
+{
+  "title": "About Me",
+  "education": "Bachelors Degree Computer Science",
+  "description": "I am a passionate and dedicated individual with a profound love for coding, encompassing both front-end and back-end development. My expertise extends to crafting robust REST APIs and gaining a comprehensive understanding of the web development lifecycle. In my leisure moments, I find solace in flight simulation, a hobby that complements my passion for technology. My interests also embrace the realm of machine learning, where I derive immense satisfaction from creating models rooted in well-established concepts. I thrive in collaborative, team-oriented environments, valuing effective communication as a cornerstone of our collective success, and am committed to fostering a seamless development cycle for our projects.",
+  "desctiption2": "Making a difference with REST APIs, Deep Learning Models, and interactive User Interfaces. I have graduated from California State University Northridge, with a Bachelors in Computer Science. I currently am aspiring to be a major contributor in the tech Industry. I am ambitious to leverage the newest technologies that are relevant.",
+  "Interests": ["Web Development", "Machine Learning and Artificial Intelligence", "Data Science", "Game Development"]
+}

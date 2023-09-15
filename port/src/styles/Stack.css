@@ -1,0 +1,35 @@
+.stack-wrapper{
+  background: linear-gradient(to right, #e8e8e8, #787878);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.stack-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.stack-container > *{
+  padding: 20px;
+}
+
+.stack-img{
+  width: 100px;
+  height: 100px;
+}
+
+.stack-list{
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.stack-font{
+ color: black;
+}
+
+.stack-title{
+  font-size: 2rem;
+  font-weight: bold;
+}

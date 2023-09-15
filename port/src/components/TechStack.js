@@ -1,5 +1,7 @@
 import React from 'react';
-import '../styles/TechStack.css'
+import '../styles/TechStack.css';
+import TechList from '../assets/TechStack.json';
+import Stack from './Stack';
 
 class TechStack extends React.Component{
   constructor(props){
@@ -20,6 +22,16 @@ class TechStack extends React.Component{
       this.setState({ isVisible: false });
   }
 
+  techStackList = () =>{
+    const techStacks = [];
+    TechList.forEach((stack)=>{
+      techStacks.push(<li><Stack stack={stack}/></li>)
+    })
+    return(<ul className='techStack-list'>{techStacks}</ul>)
+  }
+
+
+
   render(){
     const {isVisible} = this.state;
     return (
@@ -27,28 +39,7 @@ class TechStack extends React.Component{
         <div className={`scroll-text ${isVisible ? 'visible' : ''}`}>
           <p className='techstack-title'>TechStack</p>
           <div className='techstack-container'>
-            <p>Making a difference with REST APIs, Deep Learning Models,
-              and interactive User Interfaces. I have graduated from
-              California State University Northridge, with a Bachelors
-              in Computer Science. I currently am aspiring to be a major
-              contributor in the tech Industry. I am ambitious to leverage
-              the newest technologies that are relevant.
-            </p>
-            <p>Making a difference with REST APIs, Deep Learning Models,
-              and interactive User Interfaces. I have graduated from
-              California State University Northridge, with a Bachelors
-              in Computer Science. I currently am aspiring to be a major
-              contributor in the tech Industry. I am ambitious to leverage
-              the newest technologies that are relevant.
-            </p>
-            <p>
-              Making a difference with REST APIs, Deep Learning Models,
-              and interactive User Interfaces. I have graduated from
-              California State University Northridge, with a Bachelors
-              in Computer Science. I currently am aspiring to be a major
-              contributor in the tech Industry. I am ambitious to leverage
-              the newest technologies that are relevant.
-            </p>
+            <this.techStackList/>
           </div>
         </div>
       </div>

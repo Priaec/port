@@ -1,0 +1,38 @@
+[
+  {
+    "language": "Python",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Python_icon_%28black_and_white%29.svg",
+    "applications": ["Artificial Neural Networks", "Convolutional Neural Networks", "Classification", "Machine Learning Algorithms", "Preprocessing", "Feature Engineering", "Model Training", "Model Analysis", "Dictionaries and Hash Maps", "Data Manipulation", "DataFrames and Excel SpreadSheets"],
+    "frameworks": ["Tensorflow", "Keras", "SKLearn", "Pandas", "MatPlotLib", "Seaborn"]
+  },
+  {
+    "language": "JavaScript",
+    "img": "./JSLogo.svg",
+    "applications": ["RESTful API'S", "Dynamic Websites", "Web Applications", "Mobile Applications", "Web Servers", "Dynamic Data"],
+    "frameworks": ["Node JS", "Express JS", "React JS", "React Native", "Axios", "EJS", "SocketIO", "JSON"]
+  },
+  {
+    "language": "Java",
+    "img": "./JavaLogo.png",
+    "applications": ["Mobile Applications", "DataStructures and Algorithms"],
+    "frameworks": ["Android Studio"]
+  },
+  {
+    "language": "noSQL Non-relational Database Languages",
+    "img": "./noSQLLogo.png",
+    "applications": ["Web Applications", "Mobile Applications"],
+    "frameworks": ["MonoDB", "MongoDB Compass Database Management System"]
+  },
+  {
+    "language": "SQL Relational Database Languages",
+    "img": "https://www.svgrepo.com/show/369980/database-sql.svg",
+    "applications": ["Web Applications", "Mobile Applications"],
+    "frameworks": ["mySQL", "phpMyAdmin","Android Studio"]
+  },
+  {
+    "language": "PHP",
+    "img": "./PHPLogo.png",
+    "applications": ["Web Applications"],
+    "frameworks": ["XAMPP", "Apache Web Servers"]
+  }
+]

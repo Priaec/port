@@ -6,7 +6,7 @@
 }
 
 .landingPage-logo{
-  animation: spinning-logo 1.5s infinite ease;
+  animation: spinning-logo 1.5s ease;
 }
 
 @keyframes spinning-logo {
