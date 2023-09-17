@@ -3,6 +3,7 @@ import '../styles/TechStack.css';
 import TechList from '../assets/TechStack.json';
 import Stack from './Stack';
 import TechStackList from './TechStackList';
+import SkillChart from './SkillChart';
 
 class TechStack extends React.Component{
   constructor(props){
@@ -38,7 +39,10 @@ class TechStack extends React.Component{
     return (
       <div className='techstack-wrapper'>
         <div className={`scroll-text ${isVisible ? 'visible' : ''}`}>
-          <p className='techstack-title'>TechStack</p>
+          <div className='techstack-header'>
+            <p className='techstack-title'>TechStack</p>
+            <SkillChart/>
+          </div>
           <div className='techstack-container'>
             <TechStackList/>
           </div>

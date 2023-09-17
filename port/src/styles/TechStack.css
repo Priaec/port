@@ -43,6 +43,12 @@
   }
 }
 
+.techstack-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .techstack-container{
   display: flex;
   flex-direction: row;
@@ -80,5 +86,10 @@
   }
   .techStack-item{
     width: calc(100% - 10px);
+  }
+  .techstack-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
