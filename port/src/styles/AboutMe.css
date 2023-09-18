@@ -1,27 +1,49 @@
 .aboutMe-wrapper{
   font-size: large;
-  padding: 10px 5px;
+  margin: 25px;
+  border-radius: 25px;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.9);
+}
+
+.aboutMe-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .aboutMe-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  background: black padding-box, linear-gradient(to right, darkblue, darkorchid) border-box;
+}
+
+.aboutMe-content{
+  color: rgb(113, 113, 113);
+  font-size: 1rem;
+  text-indent: 2em;
 }
 
 .aboutMe-title{
-  font-size: 1.5rem;
+  font-size: 3.5rem;
+  margin-block: 0px;
 }
 
 .aboutMe-gradPicture{
-  width: 80%;
-  height: 80%;
-  border-radius: 30px;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  .aboutMe-container{
+    flex-direction: column;
+  }
   .aboutMe-gradPicture{
     width: 100%;
     height: 100%;
   }
+}
+
+@media (max-width: 500px) {
 }

@@ -4,6 +4,7 @@
   background: linear-gradient(#151515, #242424) padding-box, linear-gradient(to right, #FEDB37, #FDB931, #9f7928 20%, #8A6E2F) border-box;
   border-image:linear-gradient(to right, #FEDB37, #FDB931, #9f7928, #8A6E2F);
   border-image-slice: 1;
+  padding: 5vw;
   border-width: 5px;
   border-style: solid;
   margin: 25px;
@@ -76,7 +77,10 @@
   width: calc(50% - 10px);
 }
 
-@media (max-width: 620px) {
+@media (max-width: 650px) {
+  .techstack-wrapper{
+    padding: 0vw;
+  }
   .techstack-container{
     flex-direction: column;
   }

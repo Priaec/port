@@ -1,6 +1,6 @@
 import React from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement } from 'chart.js';
-import { Bar, Doughnut } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(
   CategoryScale,
@@ -38,7 +38,7 @@ class SkillChart  extends React.Component{
         },
         y: {
           beginAtZero: true,
-          max: 100,
+          max: 400,
         },
       },
     };

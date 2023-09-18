@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Projects.css';
 import Project from './Project';
 import ProjectList from '../assets/Projects.json';
+import Sphere from './Sphere';
 
 class Projects extends React.Component{
   constructor(props){
@@ -19,10 +20,15 @@ class Projects extends React.Component{
   }
 
   render(){
-    const { props } = this.props;
     return (
       <div className='projects-wrapper'>
-        <this.projectList/>
+        <div className='projects-header'>
+          <p className='projects-title'>Projects</p>
+          <Sphere color={0x7F00FF} width={400} height={400}/>
+        </div>
+        <div className='projects-container'>
+          <this.projectList/>
+        </div>
       </div>
     );
   }

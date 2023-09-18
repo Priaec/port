@@ -24,15 +24,6 @@ class Footer extends React.Component{
             <div className='footer-img-container'>
               <img className='footer-img' src={github} alt=''/>
             </div>
-            <div className='footer-img-container'>
-              <img className='footer-img' src={linkedIn} alt=''/>
-            </div>
-            <div className='footer-img-container'>
-              <img className='footer-img' src={github} alt=''/>
-            </div>
-            <div className='footer-img-container'>
-              <img className='footer-img' src={linkedIn} alt=''/>
-            </div>
           </div>
         </div>
       </div>

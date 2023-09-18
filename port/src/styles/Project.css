@@ -65,6 +65,11 @@
 
 .project-concepts{
   width: 30%;
+  list-style: none;
+}
+
+.project-concept{
+  padding: 5px;
 }
 
 

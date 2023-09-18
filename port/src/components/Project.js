@@ -32,7 +32,7 @@ class Project extends React.Component{
   conceptList = ({concepts}) =>{
     const renderedConcepts = []
     concepts.forEach((concept)=>{
-      renderedConcepts.push(<li>{concept}</li>)
+      renderedConcepts.push(<li className='project-concept'>{concept}</li>)
     })
     return(<ul className='project-concepts'>{renderedConcepts}</ul>)
   }

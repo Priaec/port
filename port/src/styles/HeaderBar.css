@@ -14,6 +14,7 @@
   height: fit-content;
   padding: 10px;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 /*user hovers over one of the links*/
