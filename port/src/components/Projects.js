@@ -23,7 +23,7 @@ class Projects extends React.Component{
     return (
       <div className='projects-wrapper'>
         <div className='projects-header'>
-          <p className='projects-title'>Projects</p>
+          <p className='projects-title'>Recent Works</p>
           <Sphere color={0x7F00FF} width={400} height={400}/>
         </div>
         <div className='projects-container'>

@@ -21,8 +21,8 @@ class SkillChart  extends React.Component{
           label: 'Expertise',
           data: [90, 85, 30],
           backgroundColor: [
-            'rgba(154, 116, 35, 1',
-            'rgb(253,185,49)',
+            'rgb(255, 16, 240)',
+            'rgb(127, 0, 255)',
             'rgb(65, 65, 65)'
           ],
           borderWidth: 0,

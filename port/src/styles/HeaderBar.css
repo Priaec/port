@@ -20,7 +20,9 @@
 /*user hovers over one of the links*/
 .headerBar-button:hover{
   cursor: pointer;
-  color: #7F00FF
+  color: #7F00FF;
+  transition: transform 0.1s ease-in;
+  transform: translateY(5px);
 }
 
 .headerBar-button-left-element{

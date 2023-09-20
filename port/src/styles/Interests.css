@@ -45,7 +45,6 @@
   border: 2px solid transparent;
   white-space: nowrap;
   color: #7f00ff;
-  /*color: rgb(255, 255, 255);*/
   transition: border-radius 0.2s;
 }
 
@@ -53,6 +52,7 @@
   background: linear-gradient(to right, #FF10F0, #7f00ff), none padding-box , none border-box;
   color: black;
   border-radius: 10px;
+  /*box-shadow: 0 0 4px 5px #7f00ff;*/
 }
 
 @keyframes blob-animation {

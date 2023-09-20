@@ -40,7 +40,10 @@ class TechStack extends React.Component{
       <div className='techstack-wrapper'>
         <div className={`scroll-text ${isVisible ? 'visible' : ''}`}>
           <div className='techstack-header'>
-            <p className='techstack-title'>TechStack</p>
+            <div className='techstack-leftHeader'>
+              <p className='techstack-title'>TechStack</p>
+              <button className='techstack-button'>Recent Works</button>
+            </div>
             <SkillChart/>
           </div>
           <div className='techstack-container'>

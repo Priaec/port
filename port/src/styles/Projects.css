@@ -20,6 +20,7 @@
 .projects-title{
   color: #7F00FF;
   font-size: 5rem;
+  text-align: center;
 }
 
 @media (max-width: 800px) {
