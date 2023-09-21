@@ -2,9 +2,13 @@ import React from 'react';
 import linkedIn from '../assets/linkedIn.png'
 import github from '../assets/Github.png'
 import '../styles/Footer.css'
-//import FooterForm from './FooterForm';
 
 class Footer extends React.Component{
+
+  goToGH = () =>{
+    window.open('https://github.com/Priaec', '_blank');
+  }
+
   render(){
     return (
       <div className='footer-wrapper'>
@@ -22,7 +26,7 @@ class Footer extends React.Component{
               <img className='footer-img' src={linkedIn} alt=''/>
             </div>
             <div className='footer-img-container'>
-              <img className='footer-img' src={github} alt=''/>
+              <img className='footer-img' onClick={this.goToGH} src={github} alt=''/>
             </div>
           </div>
         </div>

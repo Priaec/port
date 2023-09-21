@@ -6,6 +6,7 @@ import TechStack from './TechStack';
 import Projects from './Projects';
 import '../styles/Home.css';
 import Blog from './Blog';
+import Contact from './Contact';
 
 class Home extends React.Component{
   constructor(props){
@@ -36,6 +37,7 @@ class Home extends React.Component{
         <AboutMe aboutMeRef={this.aboutMeRef}/>
         <TechStack/>
         <Projects props={this.props} projectsRef={this.projectsRef}/>
+        <Contact/>
         <Footer/>
       </div>
     );
