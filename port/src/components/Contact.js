@@ -17,8 +17,16 @@ class Contact extends React.Component{
 
   }
 
-  submit = () =>{
+  submit = async () =>{
+    const url = process.env.REACT_APP_API_URL
+    console.log(url);
+    /*try{
+      await axios.post()
+    }
+    catch{
 
+    }
+    */
   }
 
 

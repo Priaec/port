@@ -2,5 +2,7 @@ POST http://localhost:3001/api/send-email
 Content-Type: application/json
 
 {
-  ""
+  "name": "Joshua Cohen",
+  "from": "piratesfordays15@gmail.com",
+  "message": "Hi There!"
 }
