@@ -13,7 +13,7 @@ class AboutMe extends React.Component{
         </div>
         <div className='aboutMe-container'>
           <p className='aboutMe-content'>{About.description}</p>
-          <Gallery images={['/GradPicture.png', '/Logo.png']}/>
+          <Gallery images={['/GradPicture.png', '/Logo.png']}height={window.innerWidth < `400px` ? 50: `fit-content`}/>
         </div>
         <Interests/>
       </div>

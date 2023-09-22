@@ -21,16 +21,25 @@ class Gallery extends React.Component{
   render(){
     const { index } = this.state;
     const { images } = this.props;
+    const hasImages = (images.length && images.length > 1)
+    if(!Array.isArray(images))
+      return(<></>)
+    else{
     return(
       <div className="gallery-wrapper">
         <div className="gallery-container">
-          <button className='gallery-button' onClick={()=> this.toggleIndex(index - 1)}>{`<`}</button>
+          {hasImages && (
+            <button className='gallery-button' onClick={()=> this.toggleIndex(index - 1)}>{`<`}</button>
+          )}
           <img className='gallery-img' src={images[index]} alt=''/>
-          <button className="gallery-button" onClick={()=> this.toggleIndex(index + 1)}>{`>`}</button>
+          {hasImages && (
+            <button className="gallery-button" onClick={()=> this.toggleIndex(index + 1)}>{`>`}</button>
+          )}
         </div>
       </div>
       );
     }
+  }
 }
 
 export default Gallery;
