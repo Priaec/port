@@ -23,9 +23,9 @@ class Interests extends React.Component{
   render(){
     const {isVisible} = this.state;
     return (
-      <div className={`scroll-text ${isVisible ? 'visible' : ''} interests-wrapper`}>
+      <div id='interests-wrapper' className={`scroll-text ${isVisible ? 'visible' : ''}`}>
         <p className='interests-title'>- Interests</p>
-        <div className='interests-container'>
+        <div id='interests-container'>
           <p className='interests-content'>Making a difference with REST APIs, Deep Learning Models,
             and interactive User Interfaces. I have graduated from
             California State University Northridge, with a Bachelors

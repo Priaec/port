@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.projects-container{
+#projects-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

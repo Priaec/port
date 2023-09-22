@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/Project.css';
+import ProjectDetails from './ProjectDetails';
+import Popup from './Popup';
 
 class Project extends React.Component{
   constructor(props){
@@ -7,6 +9,7 @@ class Project extends React.Component{
     this.state = {
       isVisible: false,
       isBouncing: false,
+      trigger: false
     }
   }
 
@@ -46,8 +49,12 @@ class Project extends React.Component{
     )
   }
 
+  updateTrigger = ()=>{
+    this.setState({trigger: false})
+  }
+
   render(){
-    const { isVisible, isBouncing } = this.state;
+    const { isVisible, isBouncing, trigger } = this.state;
     const { project } = this.props;
     return (
       <div className={`project-wrapper ${isBouncing ? 'bounce': ''} scroll-text ${isVisible ? 'visible' : ''}`}
@@ -60,8 +67,9 @@ class Project extends React.Component{
         </div>
         <div className='project-footer'>
           <button className='project-button'>Gallery</button>
-          <button className='project-button'>Learn More</button>
+          <button onClick={()=>{this.setState({trigger: true})}} className='project-button'>Learn More</button>
         </div>
+        <Popup trigger={trigger} updateTrigger={this.updateTrigger} component={<ProjectDetails project={project}/>}></Popup>
       </div>
     );
   }

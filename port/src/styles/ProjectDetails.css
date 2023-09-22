@@ -1,0 +1,143 @@
+.projectDetails-element{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255 255 255 / 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.projectDetails-reverseSlide{
+ animation: reverseSlide 1.5s ease;
+}
+
+.projectDetails-wrapper{
+  background: linear-gradient(black, black) padding-box, linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-image: linear-gradient(to right,#FF10F0 ,#7f00ff);
+  border-image-slice: 1;
+  border-width: 2px;
+  border-style: solid;
+  border: 2px solid transparent;
+  animation: slide 1s ease;
+}
+
+@keyframes slide {
+  0%{
+    transform: translateX(110vw);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes reverseSlide{
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(2000px);
+  }
+}
+
+.projectDetails-subHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+@media (max-width: 400px) {
+  .projectDetails-wrapper{
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .projectDetails-title{
+    font-size: 0.7rem;
+  }
+  .projectDetails-subHeader{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectDetails-container > *{
+    font-size: 0.7rem;
+  }
+}
+
+.projectDetails-container{
+  position: relative;
+  padding: 30px;
+  width: 100%;
+  max-width: 85vw;
+}
+
+.projectDetails-title{
+  font-size: 3rem;
+  margin: 0px;
+  color: #7f00ff;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #7f00ff, transparent);
+  border-image-slice: 1;
+}
+
+.projectDetails-button{
+  padding-inline: 30px;
+  border-radius: 40px;
+  height: 10vh;
+  text-align: center;
+  font-size: 1.6rem;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.9);
+  background: linear-gradient(black, black) padding-box, linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-image: linear-gradient(to right,#FF10F0 ,#7f00ff);
+  border-image-slice: 1;
+  border-width: 2px;
+  border-style: solid;
+  border: 2px solid transparent;
+  white-space: nowrap;
+  color: #7f00ff;
+  transition: border-radius 0.1s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectDetails-button:hover{
+  background: linear-gradient(to right, #FF10F0, #7f00ff), none padding-box , none border-box;
+  color: black;
+  border-radius: 10px;
+}
+
+.projectDetails-concepts{
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  column-count: 2;
+  column-gap: 10px;
+}
+
+.projectDetails-subTitle{
+  font-size: 2rem;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #7f00ff, transparent);
+  border-image-slice: 1;
+}

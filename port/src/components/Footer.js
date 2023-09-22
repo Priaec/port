@@ -9,6 +9,10 @@ class Footer extends React.Component{
     window.open('https://github.com/Priaec', '_blank');
   }
 
+  goToLI = () =>{
+    window.open('https://www.linkedin.com/in/joshua-cohen-aa091a173/', '_blank')
+  }
+
   render(){
     return (
       <div className='footer-wrapper'>
@@ -23,7 +27,7 @@ class Footer extends React.Component{
           </div>
           <div className='footer-img-wrapper'>
             <div className='footer-img-container'>
-              <img className='footer-img' src={linkedIn} alt=''/>
+              <img className='footer-img' onClick={this.goToLI} src={linkedIn} alt=''/>
             </div>
             <div className='footer-img-container'>
               <img className='footer-img' onClick={this.goToGH} src={github} alt=''/>

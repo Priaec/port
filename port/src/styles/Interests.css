@@ -3,7 +3,7 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.interests-wrapper{
+#interests-wrapper{
   padding-inline: 5vw;
 
 }

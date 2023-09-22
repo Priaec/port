@@ -37,7 +37,7 @@ class TechStack extends React.Component{
   render(){
     const {isVisible} = this.state;
     return (
-      <div className='techstack-wrapper'>
+      <div id='techstack-wrapper'>
         <div className={`scroll-text ${isVisible ? 'visible' : ''}`}>
           <div className='techstack-header'>
             <div className='techstack-leftHeader'>

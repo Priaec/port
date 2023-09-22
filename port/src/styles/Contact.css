@@ -15,9 +15,10 @@
   border-image: linear-gradient(to right, #7f00ff, transparent);
   border-image-slice: 1;
 }
-.contact-form{
+#contact-form{
   display: flex;
   flex-direction: column;
+  padding-bottom: 2vh;
 }
 
 .contact-input{
