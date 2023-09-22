@@ -5,7 +5,6 @@ import Footer from './Footer';
 import TechStack from './TechStack';
 import Projects from './Projects';
 import '../styles/Home.css';
-import Blog from './Blog';
 import Contact from './Contact';
 
 class Home extends React.Component{

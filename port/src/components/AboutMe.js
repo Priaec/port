@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/AboutMe.css'
 import About from '../assets/AboutMe.json';
 import Interests from './Interests';
-import gradPicture from '../assets/GradPicture.png';
+import Gallery from './Gallery';
 
 class AboutMe extends React.Component{
   render(){
@@ -13,7 +13,7 @@ class AboutMe extends React.Component{
         </div>
         <div className='aboutMe-container'>
           <p className='aboutMe-content'>{About.description}</p>
-          <img className='aboutMe-gradPicture' src={gradPicture} alt=''/>
+          <Gallery images={['/GradPicture.png', '/Logo.png']}/>
         </div>
         <Interests/>
       </div>

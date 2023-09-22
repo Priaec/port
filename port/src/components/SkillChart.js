@@ -31,18 +31,6 @@ class SkillChart  extends React.Component{
       ],
     };
 
-    const options = {
-      scales: {
-        x:{
-          type: 'category'
-        },
-        y: {
-          beginAtZero: true,
-          max: 400,
-        },
-      },
-    };
-
     return (
       <div className='skillchart-container'>
           <Doughnut data={data}/>
