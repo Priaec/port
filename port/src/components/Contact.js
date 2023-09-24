@@ -1,34 +1,88 @@
 import React from "react";
 import '../styles/Contact.css';
+import axios from 'axios';
+import ReactLoading from 'react-loading';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 class Contact extends React.Component{
   constructor(props){
     super(props);
     this.state = {
+      recaptchaToken: null,
       firstName: '',
       lastName: '',
       phoneNumber: '',
       email: '',
-      message: ''
+      message: '',
+      errMsg: '',
+      formState: ''
     }
   }
 
-  componentDidMount(){
-
+  handleErr = (err) =>{
+    setTimeout(()=>{
+      let error = ''
+      if(err.message)
+        error = err.message
+      this.setState({
+        formState: '',
+        errMsg: error
+      });
+    }, 2000);
   }
 
-  submit = async () =>{
-    const url = process.env.REACT_APP_API_URL
-    console.log(url);
-    /*try{
-      await axios.post()
-    }
-    catch{
-
-    }
-    */
+  handleCaptcha = async()=>{
+    const { recaptchaToken } = this.state;
+    const url = `${process.env.REACT_APP_API_URL}/verifyUser`;
+    const data = { recaptchaToken: recaptchaToken };
+    await axios.post(url, data)
+      .then(response=>{
+        console.log(response)
+        if(response.status !== 200){
+          throw new Error(`Captcha Verification Failed`);
+        }
+      }).catch((err)=>{
+        this.handleErr(err);
+      })
   }
 
+  submit = async() =>{
+    const { recaptchaToken, errMsg } = this.state;
+    if(!recaptchaToken)
+      return alert('Please complete the captcha');
+    try{
+      await this.handleCaptcha();
+    }catch(err){
+      console.log(err)
+      return this.handleErr(err);
+    }
+    if(errMsg)
+      return
+    this.setState({
+      formState: 'loading'
+    })
+    const url = `${process.env.REACT_APP_API_URL}/send-email`;
+    const { email, message } = this.state;
+    const data = {
+      recaptchaToken: recaptchaToken,
+      from: email,
+      message: message
+    }
+    await axios.post(url, data)
+      .then(response=>{
+        this.setState({
+          formState: 'success'
+        })
+      }).catch((err)=>{
+        console.log('from email')
+        this.handleErr(err)
+      })
+    return
+  }
+
+  handleRecaptchaChange = (value) => {
+    this.setState({recaptchaToken: value})
+  };
 
   header = () =>{
     return(
@@ -83,21 +137,44 @@ class Contact extends React.Component{
   }
 
   footer = () =>{
+    const { errMsg } = this.state;
     return(
       <div className="contact-footer">
+        <ReCAPTCHA
+          sitekey={process.env.REACT_APP_RECAP_SITE}
+          onChange={this.handleRecaptchaChange}
+        />
         <button onClick={this.submit} className="contact-button">Submit</button>
+        <p className="contact-msg">{errMsg}</p>
       </div>
     );
   }
 
   render(){
-    return(
+    const { formState } = this.state;
+    if(formState === ''){
+      return(
+        <div className="contact-wrapper">
+          <this.header/>
+          <this.container/>
+          <this.footer/>
+        </div>
+      );
+    }else if(formState === 'loading'){
+      return(
       <div className="contact-wrapper">
-        <this.header/>
-        <this.container/>
-        <this.footer/>
+        <ReactLoading type="spin" color="#7f00ff"/>
       </div>
-    );
+      );
+    }
+    else{
+      return(
+        <div className="contact-wrapper">
+          <this.header/>
+          <p className="contact-success">Email Sent Successfully</p>
+        </div>
+      );
+    }
   }
 }
 

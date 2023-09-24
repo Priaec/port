@@ -68,3 +68,13 @@
   color: black;
   border-radius: 10px;
 }
+
+.contact-msg{
+  color: red;
+  font-size: 1.2rem;
+}
+
+.contact-success{
+  font-size: 2rem;
+  color:#7f00ff;
+}
