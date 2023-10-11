@@ -5,7 +5,7 @@
     "endDate": "currently working",
     "description": "In development of an independent web application that facilitates instantaneous inter-user communication through mobile devices. The platform encompasses contact synchronization to enable frictionless message transmission, all presented within an intuitively accessible interface, ensuring a refined and immersive user experience",
     "concepts": ["React JS", "React Native", "Node.js", "Express JS", "MongoDB", "Client-Server Architecture", "JSON", "AWS", "EC2", "IAM", "JavaScript Programming Language"],
-    "images": ["/GradPicture.png"]
+    "images": ["/ChatRoomMessages.png"]
   },
   {
     "name": "BeFit Native Fitness",

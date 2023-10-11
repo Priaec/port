@@ -32,6 +32,12 @@ class TechStack extends React.Component{
     return(<ul className='techStack-list'>{techStacks}</ul>)
   }
 
+  navigateToRecentWorks = () => {
+    const projectsContainer = document.getElementById('projects-container');
+    if (projectsContainer) {
+      projectsContainer.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
 
   render(){
@@ -42,7 +48,7 @@ class TechStack extends React.Component{
           <div className='techstack-header'>
             <div className='techstack-leftHeader'>
               <p className='techstack-title'>TechStack</p>
-              <button className='techstack-button'>Recent Works</button>
+              <button className='techstack-button' onClick={this.navigateToRecentWorks}>Recent Works</button>
             </div>
             <SkillChart/>
           </div>

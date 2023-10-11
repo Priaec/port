@@ -1,11 +1,14 @@
 import React from 'react';
+import Popup from './Popup';
 import '../styles/Interests.css';
+import InterestDetails from './InterestDetails';
 
 class Interests extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      isVisible: false
+      isVisible: false,
+      trigger: false
     }
   }
 
@@ -20,8 +23,12 @@ class Interests extends React.Component{
       this.setState({ isVisible: false });
   }
 
+  updateTrigger = ()=>{
+    this.setState({trigger: false})
+  }
+
   render(){
-    const {isVisible} = this.state;
+    const {isVisible, trigger} = this.state;
     return (
       <div id='interests-wrapper' className={`scroll-text ${isVisible ? 'visible' : ''}`}>
         <p className='interests-title'>- Interests</p>
@@ -33,8 +40,12 @@ class Interests extends React.Component{
             contributor in the tech Industry. I am ambitious to leverage
             the newest technologies that are relevant.
           </p>
-          <button className='interests-button'>Learn More</button>
+          <button className='interests-button'
+            onClick={()=>{this.setState({trigger: true})}}
+          >Learn More
+          </button>
         </div>
+        <Popup trigger={trigger} updateTrigger={this.updateTrigger} component={<InterestDetails/>}></Popup>
       </div>
     );
   }
