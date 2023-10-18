@@ -27,6 +27,23 @@ body{
   animation: wobbleAnimation 5s ease-in-out infinite;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#7F00FF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF10F0;
+}
+
 @keyframes wobbleAnimation {
   0%, 100% {
     transform: scale(1);

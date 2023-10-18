@@ -3,6 +3,7 @@ import '../styles/Contact.css';
 import axios from 'axios';
 import ReactLoading from 'react-loading';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { isPhoneNumber } from "../handlers/formHandler";
 
 class Contact extends React.Component{
   constructor(props){
@@ -20,15 +21,12 @@ class Contact extends React.Component{
   }
 
   handleErr = (err) =>{
-    setTimeout(()=>{
-      let error = ''
-      if(err.message)
-        error = err.message
-      this.setState({
-        formState: '',
-        errMsg: error
-      });
-    }, 2000);
+    if(err.message)
+      err = err.message
+    this.setState({
+      formState: '',
+      errMsg: err
+    });
   }
 
   handleCaptcha = async()=>{
@@ -46,18 +44,28 @@ class Contact extends React.Component{
       })
   }
 
+  //validate all values of the form //TODO
+  validateForm = () =>{
+    const { firstName, lastName, phoneNumber, email, message } = this.state;
+    if(firstName === '' || lastName === '' || phoneNumber === '' || email === '' || message === '')
+      return 'Missing 1 or more fields';
+    if(!isPhoneNumber(phoneNumber))
+      return 'Invalid Phone Number';
+  }
+
   submit = async() =>{
-    const { recaptchaToken, errMsg } = this.state;
+    const { recaptchaToken } = this.state;
     if(!recaptchaToken)
-      return alert('Please complete the captcha');
+      return this.handleErr('Please complete the captcha');
+    const formError = this.validateForm();
+    if(formError)
+      return this.handleErr(formError);
     try{
       await this.handleCaptcha();
     }catch(err){
       console.log(err)
       return this.handleErr(err);
     }
-    if(errMsg)
-      return
     this.setState({
       formState: 'loading'
     })
