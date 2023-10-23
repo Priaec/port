@@ -146,6 +146,7 @@
 @media (max-width: 900px) {
   .project-wrapper{
     width: fit-content;
+    margin-inline: 1vw;
   }
   .project-container{
     flex-direction: column;

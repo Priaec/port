@@ -1,3 +1,38 @@
 .interestDetails-wrapper{
+  padding: 2vw;
+}
 
+.interestDetails-title{
+  font-size: 2rem;
+}
+
+.interestDetails-content{
+  max-height: 30vh;
+  overflow-y: auto;
+  font-size: 1rem;
+  color: lightgray;
+}
+
+.interestDetails-concepts{
+  margin: 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.interestDetails-concept{
+  color: rgb(150,150,150);
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.interestDetails-concept:hover{
+  background-color: #7f00ff;
+  border-radius: 0.5vw;
+  color: black;
 }

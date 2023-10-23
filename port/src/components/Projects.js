@@ -24,7 +24,7 @@ class Projects extends React.Component{
       <div className='projects-wrapper'>
         <div className='projects-header'>
           <p className='projects-title'>Recent Works</p>
-          <Sphere color={0x7F00FF} width={400} height={400}/>
+          <Sphere color={0x7F00FF} width={200} height={200}/>
         </div>
         <div id='projects-container'>
           <this.projectList/>
