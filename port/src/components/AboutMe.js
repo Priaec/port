@@ -3,6 +3,8 @@ import '../styles/AboutMe.css'
 import About from '../assets/AboutMe.json';
 import Interests from './Interests';
 import Gallery from './Gallery';
+//import CardContainer from './CardContainer';
+
 
 class AboutMe extends React.Component{
   render(){
@@ -22,3 +24,5 @@ class AboutMe extends React.Component{
 }
 
 export default AboutMe;
+
+//<CardContainer front={About.description} back={'Back Content'}/>

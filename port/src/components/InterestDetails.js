@@ -36,6 +36,7 @@ class InterestDetails extends React.Component{
             intelligence at their core to breathe life into solutions for real-world conundrums.
           </p>
           <ul className="interestDetails-concepts">
+            <p>Interest Concepts</p>
             <li className="interestDetails-concept">Artificial Neural Networks</li>
             <li className="interestDetails-concept">Web Development</li>
             <li className="interestDetails-concept">API Solutions</li>
