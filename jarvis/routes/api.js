@@ -3,8 +3,23 @@ const router = express.Router();
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer');
 const axios = require('axios')
+const path = require('path')
 
 router.use(bodyParser.json());
+const _dirname = path.dirname('')
+const buildPath = path.join(_dirname, '../../port/build')
+router.use(express.static(buildPath))
+
+//production build serving
+router.get('/*', (req, res)=>{
+  res.sendFile(
+    path.join(__dirname, '../../port/build/index.html')
+    ,(err)=>{
+      if(err)
+        res.status(500).send(err)
+    }
+  )
+})
 
 //test route
 router.get('/welcome/:name', (req, res)=>{
