@@ -1,0 +1,16 @@
+.chat-wrapper{
+  width: 40%;
+  height: 40%;
+}
+
+.chat-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.chat-img{
+  width: 50%;
+  height: 50%;
+}

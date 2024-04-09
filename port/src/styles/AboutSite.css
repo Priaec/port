@@ -1,0 +1,23 @@
+.aboutSite-wrapper{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: blueviolet;
+ margin-inline: 20%;
+ border-radius: 1rem;
+ padding: 1.3vw;
+ text-align: center;
+}
+
+.aboutSite-container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutSite-title{
+  font-size: 2rem;
+  color: black;
+}

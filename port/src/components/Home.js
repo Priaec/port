@@ -4,8 +4,9 @@ import AboutMe from './AboutMe';
 import Footer from './Footer';
 import TechStack from './TechStack';
 import Projects from './Projects';
-import '../styles/Home.css';
+import AboutSite from './AboutSite';
 import Contact from './Contact';
+import '../styles/Home.css';
 
 class Home extends React.Component{
   constructor(props){
@@ -34,6 +35,7 @@ class Home extends React.Component{
       <div className='container'>
         <HeaderBar scrollAboutToMe={this.scrollToAboutMe} scrollToProjects={this.scrollToProjects}/>
         <AboutMe aboutMeRef={this.aboutMeRef}/>
+        <AboutSite/>
         <TechStack/>
         <Projects props={this.props} projectsRef={this.projectsRef}/>
         <Contact/>
