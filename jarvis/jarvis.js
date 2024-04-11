@@ -1,7 +1,7 @@
-const nodemailer = require('nodemailer')
-require('dotenv').config()
 const express = require('express')
 const app = express()
+const path = require('path')
+require('dotenv').config()
 
 //app
 const cors = require('cors')
@@ -9,6 +9,7 @@ const cors = require('cors')
 app.all('*', cors());
 
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "build")))
 
 const apiRouter = require('./routes/api');
 app.use('/api', apiRouter);
