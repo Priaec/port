@@ -14,8 +14,9 @@ app.use(express.static(path.join(__dirname, "build")))
 const apiRouter = require('./routes/api');
 app.use('/api', apiRouter);
 
-app.use(cors({ origin: 'http://localhost:3000' }));
+//app.use(cors({ origin: 'http://jarvis:3000'}));
+port = 3000 || 3001;
 
-app.listen(3001, ()=>{
-    console.log('Server Started');
+app.listen(port, ()=>{
+    console.log(`Server Started on port: ${port}`);
 });

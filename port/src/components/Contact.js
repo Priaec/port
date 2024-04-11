@@ -31,7 +31,7 @@ class Contact extends React.Component{
 
   handleCaptcha = async()=>{
     const { recaptchaToken } = this.state;
-    const url = `${process.env.REACT_APP_API_URL}/verifyUser`;
+    const url = `/api/verifyUser`;
     const data = { recaptchaToken: recaptchaToken };
     await axios.post(url, data)
       .then(response=>{
@@ -69,7 +69,7 @@ class Contact extends React.Component{
     this.setState({
       formState: 'loading'
     })
-    const url = `${process.env.REACT_APP_API_URL}/send-email`;
+    const url = `/api/send-email`;
     const { email, message } = this.state;
     const data = {
       recaptchaToken: recaptchaToken,

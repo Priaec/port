@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Real Time Messenger",
+    "startDate": "06-10-2023",
+    "endDate": "currently working",
+    "description": "In development of an independent web application that facilitates instantaneous inter-user communication through mobile devices. The platform encompasses contact synchronization to enable frictionless message transmission, all presented within an intuitively accessible interface, ensuring a refined and immersive user experience",
+    "concepts": ["React JS", "React Native", "Node.js", "Express JS", "MongoDB", "Client-Server Architecture", "JSON", "AWS", "EC2", "IAM", "JavaScript Programming Language"],
+    "images": ["/ChatRoomMessages.png"]
+  },
+  {
+    "name": "BeFit Native Fitness",
+    "startDate": "08-15-2022",
+    "endDate": "06-07-2023",
+    "description": "Created a native application for Android and Apple (iOS) with a team of 5. Users can track daily fitness metrics leveraging native device Health APIs. Users can create individual accounts using credentials. Ability to display individualized health metrics in the dashboard.",
+    "concepts": ["React Native", "Node.js", "Express JS", "JSON", "Client-Server Architecture", "MongoDB", "Compass DBMS", "Kernel SVM","JavaScript Programming Language"],
+    "images": ["/BeFitV2.jpeg"]
+  },
+  {
+    "name": "Face Verification Model",
+    "startDate": "01-20-2023",
+    "endDate": "06-04-2023",
+    "description": "Developed a deep learning model with 9 layers, including 2 convolution layers, to perform binary classification of images by recognizing the user’s face in an image, specifically used in conjunction with ‘Tello’ drone for prediction purposes.",
+    "concepts": ["Deep Learning Models", "Convolutional Neural Networks", "Classification", "Stochastic Gradient Descent", "Image Processing", "Image Augmentation", "Underfitting and Overfitting Diagnosis", "Python Programming Language"]
+  },
+  {
+    "name": "Virtual Store Web App",
+    "startDate": "02-05-2023",
+    "endDate": "06-05-2023",
+    "description": "Created a web application with a team of 2. Users can browse, write reviews for items and post their own for others to review. Required to design and implement the database schema to the requirements. Followed a structured approach, designing and implementing a database schema with tables to efficiently store and manage user information, item details, and reviews within the application.",
+    "concepts": ["Node.js", "Express JS" , "EJS", "mySQL", "Client-Server Architecture", "JSON", "JavaScript Programming Language"]
+  },
+  {
+    "name": "Mailer Website",
+    "startDate": "10-20-2022",
+    "endDate": "12-10-2022",
+    "description": "Website where authenticated users can schedule automated emails to be sent to designated users.",
+    "concepts": ["mySQL", "JavaScript Programming Language", "PHP", "jQuery", "AJAX", "HTML", "CSS", "Apache Web Server"]
+  }
+]

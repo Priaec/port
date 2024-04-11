@@ -1,18 +1,13 @@
 version: '3'
 
 services:
-  frontend:
-    build: ./port
+  jarvis:
+    build:
+      context: ./jarvis
+      dockerfile: DockerFile
     ports:
       - "3000:3000"
-    environment:
-      - NODE_ENV=production
-    depends_on:
-      - backend
-
-  backend:
-    build: ./backend
-    ports:
-      - "4000:4000"
+    volumes:
+      - ./jarvis:/app
     environment:
       - NODE_ENV=production
